@@ -17,6 +17,8 @@ const createUser = (ev)=>{
     console.warn('added' , {userList} );
     let pre = document.querySelector('#msg pre');
     pre.textContent = '\n' + JSON.stringify(userList, '\t', 2); //Imprimir temporalmente cada array en pantalla
+
+    localStorage.setItem('myUsers', JSON.stringify(userList) );
 }
 
 document.addEventListener('DOMContentLoaded', ()=>{ //DomContentLoaded - ya cargó todo
