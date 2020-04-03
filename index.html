@@ -13,10 +13,19 @@
 
     <form action="">
       <label for="username">Usuario</label>
-      <input type="text" id="username" placeholder="Escribe tu usuario" />
+      <input type="text" id="username" placeholder="Escribe tu usuario" /><br />
       <label for="password">Contraseña</label>
-      <input type="password" id="password" placeholder="Escribe tu password" />
-      <button type="submit">Enviar</button>
+      <input
+        type="password"
+        id="password"
+        placeholder="Escribe tu password"
+      /><br />
+      <input type="checkbox" id="remember" />
+      <label for="recordar">Recordar</label><br />
+      <button id="btnCrear">Crear Usuario</button>
+      <div id="msg">
+        <pre></pre>
+      </div>
     </form>
 
     <script src="scripts/app.js"></script>
